@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+   <div class="container">
+
+    <div>
+        <button onclick="increase()">+</button>
+        <span class="number">1</span>
+        <button onclick="decrease()">-</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+   </div>
+   
+   <script>
+       let number = document.querySelector('.number')
+       let counter = 0
+       
+       function increase(){
+        counter += 1
+        number.innerHTML=counter
+       }
+       function decrease(){
+        counter -= 1
+        number.innerHTML=counter
+       }
+
+       function reset(){
+        counter = 0
+        number.innerHTML = counter
+       }
+   </script>
+</body>
+</html>
+
+
+ <!-- <div class="container">
+    <div class="item">Blue</div>
+    <div class="item">Red</div>
+    <div class="item">Green</div>
+    <div class="item">Purple</div>
+    <div class="item">Orange</div>
+   </div> -->
